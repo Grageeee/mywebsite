@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f6f7f1">
+    <meta name="description" content="Find medical, specialist and dental care at Advocate Healthcare Ghana.">
+    <title>Medical &amp; Dental Clinic | Advocate Healthcare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-shell">
+        <header class="topbar">
+            <a class="brand" href="#home" aria-label="Advocate Healthcare home">
+                <span class="brand-mark" aria-hidden="true"><span></span><span></span></span>
+                <span class="brand-copy"><strong>Advocate</strong><small>HEALTHCARE</small></span>
+            </a>
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a class="active" href="#home">Overview</a>
+                <a href="#services">Care services</a>
+                <a href="#checkups">Health checks</a>
+            </nav>
+            <a class="header-call" href="tel:+233501583744" aria-label="Call Advocate Healthcare at 050 158 3744">
+                <span class="call-dot" aria-hidden="true"></span>
+                <span>Call the clinic</span>
+            </a>
+        </header>
+
+        <main id="home">
+            <section class="intro" aria-labelledby="welcome-title">
+                <div>
+                    <p class="eyebrow"><span class="eyebrow-line"></span> YOUR HEALTH, IN GOOD HANDS</p>
+                    <h1 id="welcome-title">Find the care<br class="mobile-break"> you need.</h1>
+                    <p class="intro-copy">Medical, specialist and dental care, all in one place.</p>
+                </div>
+                <div class="clinic-status"><span class="status-dot"></span><span>Medical &amp; Dental Clinic</span></div>
+            </section>
+
+            <section class="hero" aria-label="General medical clinic">
+                <div class="hero-content">
+                    <span class="hero-kicker">GENERAL MEDICAL CLINIC</span>
+                    <h2>Care that starts<br>with listening.</h2>
+                    <p>Thoughtful diagnosis and treatment, supported by our in-house laboratory.</p>
+                    <div class="hero-actions">
+                        <button class="button button-light" type="button" data-open-appointment>Request a visit <span
+                                aria-hidden="true">↗</span></button>
+                        <a class="hero-phone" href="tel:+233501583744">050 158 3744</a>
+                    </div>
+                </div>
+                <div class="hero-caption"><span class="caption-mark"></span> MEDICAL CARE · ACCRA, GHANA</div>
+            </section>
+
+            <section class="services-section" id="services" aria-labelledby="services-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">CARE, AT EVERY STAGE</p>
+                        <h2 id="services-title">Explore our services</h2>
+                    </div>
+                    <label class="service-search">
+                        <span class="search-icon" aria-hidden="true">⌕</span>
+                        <input id="service-search" type="search" placeholder="Find a service"
+                            aria-label="Find a service">
+                    </label>
+                </div>
+                <div class="service-grid" id="service-grid">
+                    <article class="service-item"
+                        data-service="general medical clinic malaria typhoid hypertension diabetes infections gastroenteritis">
+                        <div class="service-top"><span class="service-number">01</span><span
+                                class="service-symbol symbol-green">GM</span></div>
+                        <h3>General medicine</h3>
+                        <p>Diagnosis and treatment for common illnesses, including malaria, hypertension and diabetes.
+                        </p>
+                        <button class="text-link" type="button" data-service-choice="General medicine">Request a visit
+                            <span aria-hidden="true">↗</span></button>
+                    </article>
+                    <article class="service-item"
+                        data-service="obstetrics gynaecology fertility pregnancy childbirth postpartum women">
+                        <div class="service-top"><span class="service-number">02</span><span
+                                class="service-symbol symbol-coral">OB</span></div>
+                        <h3>Women’s health</h3>
+                        <p>Pregnancy, postpartum, reproductive health and fertility consultations.</p>
+                        <button class="text-link" type="button" data-service-choice="Obstetrics and gynaecology">Request
+                            a visit <span aria-hidden="true">↗</span></button>
+                    </article>
+                    <article class="service-item"
+                        data-service="physician specialist consultation detailed diagnosis treatment">
+                        <div class="service-top"><span class="service-number">03</span><span
+                                class="service-symbol symbol-blue">PS</span></div>
+                        <h3>Physician specialist</h3>
+                        <p>In-depth assessment and treatment plans for your medical condition.</p>
+                        <button class="text-link" type="button"
+                            data-service-choice="Physician specialist consultation">Request a visit <span
+                                aria-hidden="true">↗</span></button>
+                    </article>
+                    <article class="service-item"
+                        data-service="pediatrician pediatric children infants adolescents child care">
+                        <div class="service-top"><span class="service-number">04</span><span
+                                class="service-symbol symbol-yellow">PD</span></div>
+                        <h3>Children’s health</h3>
+                        <p>Care for infants, children and adolescents, from everyday concerns to treatment.</p>
+                        <button class="text-link" type="button" data-service-choice="Pediatrician consultation">Request
+                            a visit <span aria-hidden="true">↗</span></button>
+                    </article>
+                    <article class="service-item" data-service="dietician nutrition eating habits nutritional needs">
+                        <div class="service-top"><span class="service-number">05</span><span
+                                class="service-symbol symbol-lilac">NU</span></div>
+                        <h3>Nutrition & dietetics</h3>
+                        <p>Personal guidance on eating habits and nutrition tailored to your health needs.</p>
+                        <button class="text-link" type="button" data-service-choice="Dietician service">Request a visit
+                            <span aria-hidden="true">↗</span></button>
+                    </article>
+                    <a class="service-item checkup-item" href="#checkups"
+                        data-service="regular medical check ups screening physical">
+                        <div class="service-top"><span class="service-number">06</span><span
+                                class="service-symbol symbol-ink">+</span></div>
+                        <h3>Regular check-ups</h3>
+                        <p>Preventive health checks to help you stay ahead of changing health needs.</p>
+                        <span class="text-link">Explore check-ups <span aria-hidden="true">↗</span></span>
+                    </a>
+                    <article class="service-item"
+                        data-service="dental dentistry dentist teeth tooth oral care checkup cleaning toothache">
+                        <div class="service-top"><span class="service-number">07</span><span
+                                class="service-symbol symbol-blue">DC</span></div>
+                        <h3>Dental care</h3>
+                        <p>Dental consultations for routine oral health needs, tooth pain and other concerns.</p>
+                        <button class="text-link" type="button" data-service-choice="Dental care">Request a visit
+                            <span aria-hidden="true">↗</span></button>
+                    </article>
+                </div>
+                <p class="empty-search" id="empty-search" hidden>No services match that search. Try another term.</p>
+            </section>
+
+            <section class="checkup-panel" id="checkups" aria-labelledby="checkup-title">
+                <div class="checkup-copy">
+                    <p class="eyebrow">A LITTLE PREVENTION GOES A LONG WAY</p>
+                    <h2 id="checkup-title">Make time for<br>your health.</h2>
+                    <p>Some health conditions have no early symptoms. Regular check-ups can help identify changes sooner
+                        and give you a clearer picture of your health.</p>
+                    <button class="button button-green" type="button" data-service-choice="Regular medical check-up">Ask
+                        about a check-up <span aria-hidden="true">↗</span></button>
+                </div>
+                <div class="checkup-details">
+                    <span class="detail-label">A check-up may include</span>
+                    <ul>
+                        <li><span>01</span> Blood pressure</li>
+                        <li><span>02</span> Fasting glucose</li>
+                        <li><span>03</span> Serum lipids</li>
+                        <li><span>04</span> Other tests as advised</li>
+                    </ul>
+                    <p class="checkup-note">Your clinician can recommend an appropriate schedule based on your health
+                        history.</p>
+                </div>
+            </section>
+
+            <section class="contact-strip" aria-label="Contact the clinic">
+                <div><span class="contact-overline">HERE WHEN YOU NEED US</span>
+                    <h2>Let’s talk about your health.</h2>
+                </div>
+                <a class="button button-light" href="tel:+233501583744">Call 050 158 3744 <span
+                        aria-hidden="true">↗</span></a>
+            </section>
+        </main>
+
+        <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark"
+                    aria-hidden="true"><span></span><span></span></span><span
+                    class="brand-copy"><strong>Advocate</strong><small>HEALTHCARE</small></span></a><span>Medical &amp; Dental Clinic
+                · Ghana</span><a href="tel:+233501583743">Alternate line: 050 158 3743</a></footer>
+    </div>
+
+    <nav class="mobile-nav" aria-label="Quick navigation">
+        <a class="mobile-nav-item selected" href="#home"><span class="nav-glyph"
+                aria-hidden="true">⌂</span><span>Home</span></a>
+        <a class="mobile-nav-item" href="#services"><span class="nav-glyph"
+                aria-hidden="true">✳</span><span>Services</span></a>
+        <a class="mobile-nav-item" href="#checkups"><span class="nav-glyph"
+                aria-hidden="true">＋</span><span>Check-ups</span></a>
+        <a class="mobile-nav-item" href="tel:+233501583744"><span class="nav-glyph"
+                aria-hidden="true">↗</span><span>Call</span></a>
+    </nav>
+
+    <dialog class="appointment-dialog" id="appointment-dialog" aria-labelledby="dialog-title">
+        <form class="appointment-form" id="appointment-form">
+            <button class="dialog-close" type="button" aria-label="Close appointment form"
+                data-close-appointment>×</button>
+            <p class="eyebrow">YOUR NEXT STEP</p>
+            <h2 id="dialog-title">Request a visit</h2>
+            <p class="dialog-copy">Share a few details and continue your request in WhatsApp.</p>
+            <label for="patient-name">Your name</label>
+            <input id="patient-name" name="name" autocomplete="name" required placeholder="Full name">
+            <label for="patient-phone">Phone number</label>
+            <input id="patient-phone" name="phone" type="tel" autocomplete="tel" required
+                placeholder="e.g. 024 000 0000">
+            <label for="visit-service">Service</label>
+            <select id="visit-service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option>General medicine</option>
+                <option>Obstetrics and gynaecology</option>
+                <option>Physician specialist consultation</option>
+                <option>Pediatrician consultation</option>
+                <option>Dietician service</option>
+                <option>Regular medical check-up</option>
+                <option>Dental care</option>
+            </select>
+            <button class="button button-green submit-button" type="submit">Continue to WhatsApp <span
+                    aria-hidden="true">↗</span></button>
+            <p class="form-note">For urgent medical concerns, call the clinic directly.</p>
+        </form>
+    </dialog>
+
+    <script>
+        const appointmentDialog = document.querySelector('#appointment-dialog');
+        const serviceSelect = document.querySelector('#visit-service');
+
+        document.querySelectorAll('[data-open-appointment], [data-service-choice]').forEach((button) => {
+            button.addEventListener('click', () => {
+                const service = button.dataset.serviceChoice;
+                if (service) {
+                    const matchingOption = [...serviceSelect.options].find((option) => option.text.toLowerCase() === service.toLowerCase());
+                    if (matchingOption) serviceSelect.value = matchingOption.value;
+                }
+                appointmentDialog.showModal();
+            });
+        });
+
+        document.querySelector('[data-close-appointment]').addEventListener('click', () => appointmentDialog.close());
+        appointmentDialog.addEventListener('click', (event) => {
+            if (event.target === appointmentDialog) appointmentDialog.close();
+        });
+
+        document.querySelector('#appointment-form').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const formData = new FormData(event.currentTarget);
+            const message = `Hello Advocate Healthcare, I would like to request a visit. Name: ${formData.get('name')}. Phone: ${formData.get('phone')}. Service: ${formData.get('service')}.`;
+            window.location.href = `https://wa.me/233501583744?text=${encodeURIComponent(message)}`;
+        });
+
+        const searchInput = document.querySelector('#service-search');
+        const serviceItems = [...document.querySelectorAll('.service-item')];
+        const emptySearch = document.querySelector('#empty-search');
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.trim().toLowerCase();
+            let visibleCount = 0;
+            serviceItems.forEach((item) => {
+                const matches = item.dataset.service.includes(query) || item.textContent.toLowerCase().includes(query);
+                item.hidden = !matches;
+                if (matches) visibleCount += 1;
+            });
+            emptySearch.hidden = visibleCount !== 0;
+        });
+
+        document.querySelectorAll('.mobile-nav-item').forEach((link) => {
+            link.addEventListener('click', () => {
+                document.querySelectorAll('.mobile-nav-item').forEach((item) => item.classList.remove('selected'));
+                link.classList.add('selected');
+            });
+        });
+    </script>
+</body>
+
+</html>
